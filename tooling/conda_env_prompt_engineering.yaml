@@ -1,0 +1,82 @@
+channels:\
+  - xformers\
+  - pytorch\
+  - nvidia\
+  - conda-forge\
+  - nodefaults\
+dependencies:\
+  - python=3.11\
+  - pytorch-cuda=12.*\
+  - pytorch=*=*cuda12.4*\
+  - cuda-toolkit=12.4\
+  - xformers=*=*cu12*\
+  - pip\
+  - git\
+  - gcc\
+  - libaio\
+  - pip:\
+    - trl\
+    - peft\
+    - accelerate==1.10.0\
+    - bitsandbytes==0.47.0\
+    - dask\
+    - datasets\
+    - deepspeed\
+    - einops\
+    - evaluate\
+    - huggingface_hub\
+    - transformers==4.55.2\
+    - matplotlib\
+    - nltk\
+    - numpy\
+    - pandas\
+    - pygithub\
+    - scipy\
+    - scikit-learn\
+    - seaborn\
+    - sentencepiece\
+    - tensorboard\
+    - tiktoken\
+    - wandb\
+    - snappy\
+    - pyarrow\
+    - --extra-index-url https://pypi.nvidia.com\
+    - cudf-cu12  # ==24.10.*\
+    - polars\
+\cf3     # for jupyterhub environment\cf2 \
+    - jupyterhub==3.1.1\
+    - jupyterthemes\
+    - jupyterlab\
+    - ipywidgets\
+    - jupyter-resource-usage\
+    - jupyter-server-proxy\
+    - jupyterlab-spellchecker\
+    - jupyterlab-search-replace\
+    - jupyterlab-lsp\
+    - python-lsp-server\
+    - black\
+    - isort\
+    - pytest\
+    - graphviz\
+    - pydot\
+    - yfinance\
+\cf3     # - flash-attn\cf2 \
+    - batchspawner\
+    - jupyterlab-git>=0.50\
+\cf3     # New packages for Simeon and Martin's LLM course:\cf2 \
+    - nvidia-ml-py3  # to read GPU memory usage\
+    - jellyfish  # to calculate levenshtein distance\
+    - gradio  # for simple html interfaces\
+    - sacrebleu  # for evaluation and metrics\
+    - rouge-score  # for evaluation and metrics\
+    - sentence-transformers  # for evaluation and metrics\
+    - bert-score  # for evaluation and metrics\
+    - bertviz  # to visualize attention\
+    - pydantic # used for data validation and parsing\
+    - langchain # library to build LLM applications\
+    - langchain_huggingface # integration of Hugging Face models into langchain\
+    - langchain-openai\
+    - evidently[llm] # library for evaluation, testing and metrics\
+    - tracely # library for tracing\
+    - numexpr\
+}
