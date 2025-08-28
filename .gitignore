@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+logs/
+output/
+results/
+old/
+.virtual_documents/
+slurm-*.out
+unsloth_compiled_cache/
+wandb/
+
