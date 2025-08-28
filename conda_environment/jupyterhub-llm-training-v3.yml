@@ -1,0 +1,71 @@
+channels:
+  - xformers
+  - pytorch
+  - nvidia
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pytorch-cuda=12.*
+  - pytorch
+  - cuda-toolkit
+  - xformers
+  - pip
+  - pip:
+    - "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+    - trl
+    - peft
+    - accelerate
+    - bitsandbytes
+    - dask
+    - datasets
+    - deepspeed
+    - einops
+    - evaluate
+    - huggingface_hub
+    - transformers
+    - matplotlib
+    - nltk
+    - numpy
+    - pandas
+    - peft
+    - pygithub
+    - scipy
+    - scikit-learn
+    - seaborn
+    - sentencepiece
+    - tensorboard
+    - tiktoken
+    - wandb
+    - snappy
+    - pyarrow
+    - --extra-index-url https://pypi.nvidia.com
+    - cudf-cu12
+    - polars
+    - seaborn
+    - jupyterhub==3.1.1
+    - jupyterthemes
+    - jupyterlab
+    - ipywidgets
+    - jupyter-resource-usage
+    - jupyter-server-proxy
+    - jupyterlab-spellchecker
+    - jupyterlab-search-replace
+    - jupyterlab-lsp
+    - python-lsp-server
+    - black
+    - isort
+    - pytest
+    - graphviz
+    - pydot
+    - yfinance
+    - batchspawner
+    - jupyterlab-git>=0.50
+    - pyarrow
+    # New packages for Simeon and Martin's LLM course:
+    - nvidia-ml-py3  # to read GPU memory usage
+    - jellyfish  # to calculate levenshtein distance
+    - gradio  # for simple html interfaces
+    - sacrebleu  # for evaluation and metrics
+    - rouge-score  # for evaluation and metrics
+    - bertviz  # to visualize attention
